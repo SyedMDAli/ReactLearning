@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Welcome from './Welcome';
+import Message from './Message';
 function App() {
   
   function formatName(userName){
@@ -8,10 +9,6 @@ function App() {
   }
   
   const name = "Syed Ali";
-  
-  
-
-  
   
   function getGreetings(userName){
     if(userName){
@@ -26,8 +23,8 @@ function App() {
   const para = "Good to See You!";
   const element = (
     <div>
-      <h1>Hello {formatName(name)}!</h1>
-      <p>{para}</p>
+      <Welcome name={formatName(name)} />
+      <Message message={para} />
       {image}
     </div>
   );
