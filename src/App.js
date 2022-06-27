@@ -3,8 +3,9 @@ import './App.css';
 /*
 import Welcome from './Welcome';
 import Message from './Message';
-*/
 import Clock from './Clock';
+*/
+import ToggleButton from './ToggleButton';
 function App() {
   /*
   function formatName(userName){
@@ -33,12 +34,20 @@ function App() {
   );
 
   return element;
-  */
+  
   return (
     <div>
       <Clock date={new Date()} />
     </div>
   );
+  */
+
+  return (
+    <div>
+      <ToggleButton/>
+    </div>
+  );
+
 }
 
 export default App;
