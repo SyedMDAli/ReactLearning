@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+/*
 import Welcome from './Welcome';
 import Message from './Message';
+*/
+import Clock from './Clock';
 function App() {
-  
+  /*
   function formatName(userName){
     return userName.toUpperCase();
   }
@@ -30,6 +33,12 @@ function App() {
   );
 
   return element;
+  */
+  return (
+    <div>
+      <Clock date={new Date()} />
+    </div>
+  );
 }
 
 export default App;
