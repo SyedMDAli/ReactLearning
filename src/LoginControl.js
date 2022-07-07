@@ -26,7 +26,8 @@ class LoginControl extends React.Component{
 				<Greeting isLoggedIn = {this.state.isLoggedIn}/>
 				{button}
 				{this.props.hasNewMessages && <h2>You have unread messages</h2>}
-				{this.props.credit > 0 ? (<h3>You have {this.props.credit}</h3>) : (<h3>You have no credit</h3>) }				
+				{this.props.credit > 0 ? (<h3>You have {this.props.credit}</h3>) : (<h3>You have no credit</h3>) }
+				{this.props.hasWarning ? (<h3>You have Warnings</h3>) : null }				
 			</div>
 		)
 	}
