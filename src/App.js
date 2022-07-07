@@ -55,7 +55,7 @@ function App() {
 
    return (
     <div>
-      <LoginControl hasNewMessages={true} credit={100}/>
+      <LoginControl hasNewMessages={true} credit={100} hasWarning={true}/>
     </div>
   );
 
