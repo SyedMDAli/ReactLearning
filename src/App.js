@@ -4,8 +4,12 @@ import './App.css';
 import Welcome from './Welcome';
 import Message from './Message';
 import Clock from './Clock';
-*/
+
 import ToggleButton from './ToggleButton';
+
+import Greeting from './Greeting'
+*/
+import LoginControl from './LoginControl';
 function App() {
   /*
   function formatName(userName){
@@ -40,11 +44,18 @@ function App() {
       <Clock date={new Date()} />
     </div>
   );
-  */
+ 
 
   return (
     <div>
       <ToggleButton/>
+    </div>
+  );
+   */
+
+   return (
+    <div>
+      <LoginControl hasNewMessages={true} credit={100}/>
     </div>
   );
 
