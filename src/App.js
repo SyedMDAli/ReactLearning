@@ -8,8 +8,10 @@ import Clock from './Clock';
 import ToggleButton from './ToggleButton';
 
 import Greeting from './Greeting'
-*/
+
 import LoginControl from './LoginControl';
+*/
+import NumberList from './NumberList';
 function App() {
   /*
   function formatName(userName){
@@ -52,10 +54,30 @@ function App() {
     </div>
   );
    */
-
+/*
    return (
     <div>
       <LoginControl hasNewMessages={true} credit={100} hasWarning={true}/>
+    </div>
+  );
+*/
+
+  const numbers = [1,2,3,4];
+  const numbers2 = [11,2,23,24];
+  const todos = [
+    {id:1, name:'Coding', isDone: false},
+    {id:2, name:'Walking', isDone: true}
+    ];
+  return (
+    
+    <div>
+      <NumberList numbers={numbers}/>
+      <NumberList numbers={numbers2}/>
+      <ul>
+        {
+          todos.map(todo => (<li key={todo.id}> {todo.name } - {todo.isDone ? 'Done' : ''} </li>))
+        }
+      </ul>
     </div>
   );
 
